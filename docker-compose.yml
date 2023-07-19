@@ -1,0 +1,26 @@
+version: '3.8'
+
+
+services:
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: MYSQL_DATABASE
+      MYSQL_USER: MYSQL_USER
+      MYSQL_PASSWORD: MYSQL_PASSWORD
+      MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD
+    ports:
+      - "8081:8081"
+    volumes:
+      - my-db:/var/lib/mysql
+  app:
+    build: .
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
+    volumes:
+      - .:/app
+    ports:
+      - $ADMINER_PORT:$ADMINER_PORT
+
+volumes:
+  my-db:
