@@ -14,11 +14,11 @@
 
 -criar arquivo .env na raiz com as seguintes informações:
 
-MYSQL_DATABASE="database"
-MYSQL_USER="user"
-MYSQL_PASSWORD="password"
-MYSQL_ROOT_PASSWORD="password"
-MYSQL_PORT= 3306
+MYSQL_DATABASE="database"  
+MYSQL_USER="user"  
+MYSQL_PASSWORD="password"  
+MYSQL_ROOT_PASSWORD="password"  
+MYSQL_PORT= 3306  
 ADMINER_PORT= 8001
 
 -abrir um terminal e executar o comando:
