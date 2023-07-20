@@ -8,8 +8,6 @@
 
 *Docker Compose*
 
-
-
 ### Passos para executar o codigo:
 
 -criar arquivo .env na raiz com as seguintes informações:

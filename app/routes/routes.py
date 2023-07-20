@@ -8,9 +8,9 @@ router = APIRouter()
 def read_root():
     return {"Hello": "World"}
 
-@router.get("/Stefani")
+@router.get("/login")
 def read_root():
-    return {"Te amoooo"}
+    return {"Cria o login aqui cara!"}
 
 @router.post("/users")
 def create_user_route(user: User):
